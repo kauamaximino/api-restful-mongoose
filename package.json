@@ -1,0 +1,20 @@
+{
+  "name": "api-restful-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kauamaximino/api-restful-mongoose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kauamaximino/api-restful-mongoose/issues"
+  },
+  "homepage": "https://github.com/kauamaximino/api-restful-mongoose#readme"
+}
