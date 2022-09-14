@@ -3,16 +3,13 @@ const mongoose = require('mongoose');
 const app = express();
 require('dotenv').config()
 
-const Person = require('./models/Person');
+const person = require('./routes/personRoutes');
 
 app.use(express.json());
+app.use(person);
 
 //rotas da API
-app.post('/person', async (request, response) => { 
-  const { name, salary, approved } = request.body;
-  const person = await Person.create({ name, salary, approved });
-  return response.status(201).json(person);
-});
+
 
 //rota inicial
 app.get('/', (_request, response) => response.status(200).json('Hello World!'));
