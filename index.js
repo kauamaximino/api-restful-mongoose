@@ -8,6 +8,11 @@ const Person = require('./models/Person');
 app.use(express.json());
 
 //rotas da API
+app.post('/person', async (request, response) => { 
+  const { name, salary, approved } = request.body;
+  const person = await Person.create({ name, salary, approved });
+  return response.status(201).json(person);
+});
 
 //rota inicial
 app.get('/', (_request, response) => response.status(200).json('Hello World!'));
